@@ -14,7 +14,7 @@ body {
 header {    
    /* background-color: #03bbd3; /* Azul verdoso para el encabezado */
     color: white;
-    padding: 1em;
+    padding: 0em;
     text-align: center;
     
 }
@@ -24,16 +24,18 @@ nav {
 }
 
 nav button {
-    margin: 1em;
-    padding: 1em;
+    margin: 0em;
+    padding: 0em;
     background-color: #228B22; /* Verde bosque para los botones de navegación */
-    color: white;
-    border: none;
+    color: rgb(180, 27, 27);
+    border: white;
     cursor: pointer;
+   
+
 }
 
 section {
-    margin: 1em;
+    margin: 0em;
 }
 
 footer {
@@ -139,13 +141,13 @@ nav button {
 }
 
 nav button:hover {
-    background-color: #2980b9;
+    background-color: #29b954;
 }
 
 /* Estilos para el contenido dinámico */
 #contenido-dinamico {
-    margin-top: 50px; /* Ajusta el margen para evitar que el contenido se solape con el menú */
-    padding: 20px;
+    margin-top: 0px; /* Ajusta el margen para evitar que el contenido se solape con el menú */
+    padding: 0px;
 }
 body {
     margin: 0;

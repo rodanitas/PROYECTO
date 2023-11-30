@@ -55,10 +55,10 @@ function mostrarContenido(seccion) {
                             <li>Optimización para dispositivos móviles</li>
                         </ul>`;
                     break;
-        case 'testimonios':
+        case 'opiniones':
             contenido.innerHTML = `
-                <h2>Testimonios</h2>
-                <div id="comentarios">
+                <h2>Opiniones</h2>
+                <div id="opiniones">
                     <!-- Aquí se mostrarán los comentarios existentes -->
                 </div>
                 <h3>Deja tu comentario</h3>
@@ -71,7 +71,7 @@ function mostrarContenido(seccion) {
 
                     <input type="submit" value="Enviar Comentario">
                 </form>`;
-                document.getElementById('testimonios').scrollIntoView({ behavior: 'smooth' });
+                document.getElementById('comentarios').scrollIntoView({ behavior: 'smooth' });
             break;
         // ... Otros casos ...
         default:
