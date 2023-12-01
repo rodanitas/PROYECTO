@@ -2,54 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=0.1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-   
     <script src="script.js" defer></script>
     <title>EPAYE</title>
 </head>
 <body>
     <header>
-        <h1>DISEÑO Y PROGRAMACION DE PAGINAS WEB</h1>
-        <p>Expertos en HTML, CSS y JavaScript</p>
-        
+        <div class="container">
+            <h1>DISEÑO Y PROGRAMACIÓN DE PÁGINAS WEB</h1>
+            <p>Expertos en HTML, CSS y JavaScript</p>
+        </div>
     </header>
 
     <!-- Área de navegación con botones adicionales -->
     <nav>
-        
-        <button onclick="mostrarContenido('servicios')">Servicios</button>
-        <button onclick="mostrarContenido('portfolio')">Portfolio</button>
-        <button onclick="mostrarContenido('contacto')">Contacto</button>
-        <button onclick="mostrarContenido('mas-servicios')">Más Servicios</button>
-        <button onclick="mostrarContenido('opiniones')">opiniones</button>
+        <div class="container">
+            <button onclick="mostrarContenido('servicios')">Servicios</button>
+            <button onclick="mostrarContenido('portfolio')">Portfolio</button>
+            <button onclick="mostrarContenido('contacto')">Contacto</button>
+            <button onclick="mostrarContenido('mas-servicios')">Más Servicios</button>
+            <button onclick="mostrarContenido('opiniones')">Opiniones</button>
+        </div>
     </nav>
-    <div id="contenido-dinamico">
+
+    <section id="contenido-dinamico" class="container">
         <!-- Contenido dinámico se insertará aquí -->
-    </div>
-    <section id="contenido-dinamico">
-        <!-- Aquí se mostrará el contenido dinámico -->
     </section>
-    <section id="presentacion" style="background-image: url('lagu.jpeg'); height: 100vh; display: flex; align-items: center; justify-content: center;background-attachment: fixed; background-repeat: no-repeat; background-size: cover;"> 
+
+    <section id="presentacion" style="background-image: url('lagu.jpeg'); height: 100vh; display: flex; align-items: center; justify-content: center; background-attachment: fixed; background-repeat: no-repeat; background-size: cover;">
         <div class="texto-presentacion" style="text-align: center; color: white;">
             <h2>Bienvenido a nuestra empresa</h2>
             <p>Donde tus ideas se convierten en realidad</p>
         </div>
     </section>
-    
-    <body>
-        <div id="foto-esquina">
-            <img src="pagina.jpg" alt="Foto de la esquina superior derecha">
-        </div>
-    
-        <!-- Resto del contenido de tu página aquí -->
-    
-    </body>
+
+    <div id="foto-esquina">
+        <img src="pagina.jpg" alt="Foto de la esquina superior derecha">
+    </div>
 
     <footer>
-        <p>&copy; NOVIEMBRE 2023 EDWIN PAYE</p>
+        <div class="container">
+            <p>&copy; NOVIEMBRE 2023 EDWIN PAYE</p>
+        </div>
     </footer>
 </body>
 </html>
-
-

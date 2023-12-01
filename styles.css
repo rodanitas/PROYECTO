@@ -7,128 +7,30 @@ body {
     background-position: center center;
     background-color: #9ACD32; /* Amarillo verde para el fondo */
     image-rendering: optimizeQuality;
-    width: 1200px; /* Ajusta el valor según el ancho deseado */
-            margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
-header {    
-   /* background-color: #03bbd3; /* Azul verdoso para el encabezado */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header, nav, #contenido-dinamico, footer {
+    position: relative;
+    z-index: 1;
+}
+
+header {
     color: white;
-    padding: 0em;
+    padding: 1em 0;
     text-align: center;
-    
+    background-color: #333; /* Fondo del encabezado */
 }
 
 nav {
-    margin: 1em;
-}
-
-nav button {
-    margin: 0em;
-    padding: 0em;
-    background-color: #228B22; /* Verde bosque para los botones de navegación */
-    color: rgb(180, 27, 27);
-    border: white;
-    cursor: pointer;
-   
-
-}
-
-section {
-    margin: 0em;
-}
-
-footer {
-    background-color: #228B22; /* Verde bosque para el pie de página */
-    color: black;
+    background-color: #a2a5a7;
+    color: rgb(221, 18, 18);
     text-align: center;
-    padding: 1em;
-    
-}
-body {
-    transition: background-color 0.5s ease;
-}
-
-nav button {
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-nav button:hover {
-    background-color: #505250; /* Cambia el color al pasar el ratón sobre el botón */
-    transform: scale(2.2); /* Aumenta el tamaño al pasar el ratón sobre el botón */
-}
-nav button {
-    box-shadow: 10px 10px 10px rgba(186, 218, 4, 0.719); /* Sombra suave alrededor de los botones */
-    border-radius: 10px; /* Bordes redondeados */
-}
-form {
-    max-width: 500px; /* Limita el ancho del formulario */
-    margin: 0 auto; /* Centra el formulario en la página */
-}
-
-label {
-    display: block;
-    margin-bottom: 1em;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 0.5em;
-    margin-bottom: 1em;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
-}
-footer {
-    background-color: rgb(8, 39, 211); /* Color del fondo del pie de página */
-    color: white; /* Texto blanco para mayor contraste */
-}
-
-
-        body {
-            margin: 1;
-            padding: 1;
-        }
-
-        #foto-esquina {
-            position: fixed;
-            top: 0;
-            right: 0;
-            margin: 20px; /* Ajusta el margen según sea necesario */
-        }
-
-        #foto-esquina img {
-            width: 250px; /* Ajusta el ancho de la imagen según sea necesario */
-            border-radius: 10%; /* Para hacer la imagen redonda (opcional) */
-        }
- /* Estilos para el contenido dinámico */
-#contenido-dinamico {
-    font-size: 25px; /* Cambia el tamaño del texto del contenido dinámico */
-    color: rgb(199, 231, 15); /* Cambia el color del texto del contenido dinámico */
-    margin-top: 0px; /* Ajusta el margen según sea necesario */
-}
-#contenido-dinamico h2 {
-    font-size: 40px; /* Tamaño del título */
-    color: #228B22; /* Color del título */
-}
-
-#contenido-dinamico p {
-    font-size: 34px; /* Tamaño del párrafo */
-    color: #b40d0d; /* Color del párrafo */
-}
-/* Estilos para el menú de navegación */
-nav {
-    position: fixed; /* Fija el menú en la pantalla */
-    top: 0; /* Coloca el menú en la parte superior de la pantalla */
-    left: 0; /* Coloca el menú en la parte izquierda de la pantalla */
-    width: 100%; /* Ocupa el ancho completo de la pantalla */
-    background-color: #333;
-    padding: 10px;
+    padding: 1em 0;
 }
 
 nav button {
@@ -138,57 +40,48 @@ nav button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav button:hover {
     background-color: #29b954;
 }
 
-/* Estilos para el contenido dinámico */
 #contenido-dinamico {
-    margin-top: 0px; /* Ajusta el margen para evitar que el contenido se solape con el menú */
-    padding: 0px;
-}
-body {
-    margin: 0;
-    padding: 0;
+    margin-top: 100px;
+    padding: 0 20px; /* Ajusta el espaciado del contenido dinámico */
+    font-size: 25px;
+    color: rgb(199, 231, 15);
 }
 
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
+#contenido-dinamico h2 {
+    font-size: 40px;
+    color: #228B22;
+}
+
+#contenido-dinamico p {
+    font-size: 34px;
+    color: #b40d0d;
+}
+
+#foto-esquina {
     position: fixed;
-    width: 75%;
-    z-index: 1000; /* Asegura que el encabezado esté sobre otros elementos */
+    top: 0;
+    right: 0;
+    margin: 20px;
 }
 
-nav {
-    background-color: #a2a5a7;
-    color: rgb(221, 18, 18);
-    text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    width: 75%;
-    top: 100px; /* Ajusta la altura del encabezado */
-    z-index: 1000; /* Asegura que la barra de navegación esté sobre otros elementos */
-}
-
-
-#contenido-dinamico {
-    margin-top: 0px;
-    padding: 100px;
+#foto-esquina img {
+    width: 250px;
+    border-radius: 10%;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1em;
+    padding: 1em 0;
     position: fixed;
     width: 100%;
     bottom: 0;
-    z-index: 1000; /* Asegura que el pie de página esté sobre otros elementos */
 }
-
